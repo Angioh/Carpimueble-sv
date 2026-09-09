@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://carpimueble-sv.com/sitemap.xml
