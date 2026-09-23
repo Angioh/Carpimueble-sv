@@ -5,7 +5,7 @@ const icons = { users: Users, hammer: Hammer, shield: ShieldCheck };
 
 export default function AboutUs() {
   return (
-    <section id="historia" className="py-20 bg-white">
+    <section id="historia" className="py-20 bg-white scroll-mt-28">
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         <div>
           <p className="text-xs font-semibold tracking-[0.15em] text-[#5b7896] uppercase">

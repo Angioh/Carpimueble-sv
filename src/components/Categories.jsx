@@ -51,7 +51,7 @@ export default function Categories() {
 
   return (
     <>
-      <section id="catalogo" className="py-20 bg-white">
+      <section id="catalogo" className="py-20 bg-white scroll-mt-28">
         <div className="max-w-7xl mx-auto px-6">
           <h2 className="text-2xl md:text-3xl font-semibold text-center text-black">
             Mira una parte de nuestro catálogo

@@ -76,27 +76,43 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* Franja Inferior: Copyright + Enlaces Legales */}
-      <div className="max-w-7xl mx-auto px-6 mt-10 pt-6 border-t border-white/10 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-white/40">
+
+      <div className="max-w-7xl mx-auto px-6 mt-10 pt-6 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-white/40">
         <p>
           © {new Date().getFullYear()} Carpimueble SV. Todos los derechos
           reservados.
         </p>
 
-        <div className="flex items-center gap-4 text-white/60">
-          <Link
-            to="/privacidad"
-            className="hover:text-white transition-colors hover:underline"
-          >
-            Política de Privacidad
-          </Link>
-          <span>•</span>
-          <Link
-            to="/politica-cookies"
-            className="hover:text-white transition-colors hover:underline"
-          >
-            Política de Cookies
-          </Link>
+        <div className="flex flex-col sm:flex-row items-center gap-4 text-center sm:text-left">
+          <div className="flex items-center gap-4 text-white/60">
+            <Link
+              to="/privacidad"
+              className="hover:text-white transition-colors hover:underline"
+            >
+              Política de Privacidad
+            </Link>
+            <span>•</span>
+            <Link
+              to="/politica-cookies"
+              className="hover:text-white transition-colors hover:underline"
+            >
+              Política de Cookies
+            </Link>
+          </div>
+
+          <span className="hidden sm:inline text-white/20">|</span>
+
+          <p className="text-white/40 flex items-center gap-1">
+            Made with <span className="text-red-500 animate-pulse">❤️</span> by{" "}
+            <a
+              href="https://www.linkedin.com/in/giorgiocr/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white/60 hover:text-white font-medium transition-colors hover:underline"
+            >
+              Angioh
+            </a>
+          </p>
         </div>
       </div>
     </footer>
