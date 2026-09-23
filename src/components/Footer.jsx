@@ -10,7 +10,7 @@ export default function Footer() {
         <div>
           <div className="flex items-center gap-3">
             <img
-              src="/public/images/Logo.webp"
+              src="/images/Logo.webp"
               className="h-10 w-15 rounded-sm flex items-center justify-center"
               alt="Carpimueble SV Logo"
             />
