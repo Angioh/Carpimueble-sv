@@ -1,4 +1,3 @@
-
 import { Helmet } from "react-helmet-async";
 
 export default function SEO({
@@ -6,9 +5,9 @@ export default function SEO({
 
   description = "Diseño y fabricación de muebles modernos a medida en El Salvador. Especialistas en muebles de TV flotantes, closets, cocinas de melamina RH y escritorios personalizados.",
 
-  canonical = "https://carpimueble-sv.com",
+  canonical = "https://www.carpimueble-sv.com",
 
-  ogImage = "https://carpimueble-sv.com/images/Grap_carpimueble.jpg",
+  ogImage = "https://www.carpimueble-sv.com/images/Grap_carpimueble.jpg",
 }) {
   const schemaData = {
     "@context": "https://schema.org",
@@ -16,7 +15,7 @@ export default function SEO({
 
     name: "Carpimueble SV",
 
-    url: "https://carpimueble-sv.com",
+    url: "https://www.carpimueble-sv.com",
 
     logo: ogImage,
 
@@ -66,13 +65,11 @@ export default function SEO({
   return (
     <Helmet>
 
-
       <title>{title}</title>
 
       <meta name="description" content={description} />
 
       <link rel="canonical" href={canonical} />
-
 
 
       <meta property="og:type" content="website" />
@@ -104,6 +101,7 @@ export default function SEO({
       <meta property="og:locale" content="es_SV" />
 
 
+
       <meta name="twitter:card" content="summary_large_image" />
 
       <meta name="twitter:title" content={title} />
@@ -121,21 +119,6 @@ export default function SEO({
       />
 
 
-      <meta
-        name="tiktok:title"
-        content={title}
-      />
-
-      <meta
-        name="tiktok:description"
-        content={description}
-      />
-
-      <meta
-        name="tiktok:image"
-        content={ogImage}
-      />
-
 
       <script type="application/ld+json">
         {JSON.stringify(schemaData)}
@@ -143,4 +126,3 @@ export default function SEO({
     </Helmet>
   );
 }
-
