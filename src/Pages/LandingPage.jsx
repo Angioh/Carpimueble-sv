@@ -1,29 +1,37 @@
+import { lazy, Suspense } from "react";
+import SEO from "../components/SEO";
 import Navbar from "../components/Navbar.jsx";
 import Hero from "../components/Hero";
-import TrustBadges from "../components/TrustBadges";
-import Categories from "../components/Categories";
-import AboutUs from "../components/AboutUs";
-import Process from "../components/Process";
-import CTASection from "../components/CTASection";
-import Footer from "../components/Footer";
-import WhatsAppButton from "../components/WhatsAppButton";
-import SEO from "../components/SEO";
+
+const TrustBadges = lazy(() => import("../components/TrustBadges"));
+const Categories = lazy(() => import("../components/Categories"));
+const AboutUs = lazy(() => import("../components/AboutUs"));
+const Process = lazy(() => import("../components/Process"));
+const CTASection = lazy(() => import("../components/CTASection"));
+const Footer = lazy(() => import("../components/Footer"));
+const WhatsAppButton = lazy(() => import("../components/WhatsAppButton"));
 
 export default function LandingPage() {
   return (
     <div className="min-h-screen bg-white">
       <SEO />
       <Navbar />
+      
       <main>
         <Hero />
-        <TrustBadges />
-        <Categories />
-        <AboutUs />
-        <Process />
-        <CTASection />
+        <Suspense fallback={<div className="min-h-[200px]" />}>
+          <TrustBadges />
+          <Categories />
+          <AboutUs />
+          <Process />
+          <CTASection />
+        </Suspense>
       </main>
-      <WhatsAppButton />
-      <Footer />
+
+      <Suspense fallback={null}>
+        <WhatsAppButton />
+        <Footer />
+      </Suspense>
     </div>
   );
 }

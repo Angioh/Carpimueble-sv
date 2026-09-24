@@ -102,15 +102,15 @@ export default function Footer() {
             </Link>
           </div>
 
-          <span className="hidden sm:inline text-white/20">|</span>
+          <span className="hidden sm:inline text-white/70">|</span>
 
-          <p className="text-white/40 flex items-center gap-1">
+          <p className="text-white-70 flex items-center gap-1">
             Made with <span className="text-red-500 animate-pulse">❤️</span> by{" "}
             <a
               href="https://www.linkedin.com/in/giorgiocr/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white/60 hover:text-white font-medium transition-colors hover:underline"
+              className="text-white-70 hover:text-white font-medium transition-colors hover:underline"
             >
               Angioh
             </a>

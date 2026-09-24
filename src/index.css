@@ -32,9 +32,5 @@ html {
 }
 
 body {
-  @apply bg-white text-ink font-sans antialiased;
-}
-
-h1, h2, h3, h4 {
-  @apply font-display;
+  @apply bg-white;
 }
