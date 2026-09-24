@@ -52,7 +52,7 @@ export const categories = [
     title: 'Muebles para baño',
     subtitle: 'Diseños a medida para baños modernos y organizados ',
     image: '/public/images/proyectos/Muebles_para_baño_personalizados.webp',
-    image: '/images/proyectos/Muebles_para_baño_personalizados.webp',
+    image: '/images/proyectos/Muebles_para_bano_personalizados.webp',
   },
 ]
 
