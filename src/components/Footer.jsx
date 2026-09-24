@@ -11,26 +11,28 @@ export default function Footer() {
           <div className="flex items-center gap-3">
             <img
               src="/images/Logo.webp"
+              width={60}
+              height={40}
               className="h-10 w-15 rounded-sm flex items-center justify-center"
               alt="Carpimueble SV Logo"
             />
             <div className="leading-tight">
-              <p className="font-display font-semibold tracking-wide text-white text-sm">
+              <p className="font-display font-bold tracking-wide text-white text-sm">
                 CARPIMUEBLE SV
               </p>
-              <p className="text-[10px] tracking-[0.2em] text-white/40">
+              <p className="text-[10px] tracking-[0.2em] text-white/70">
                 DISEÑO Y CALIDAD
               </p>
             </div>
           </div>
-          <p className="mt-4 text-sm text-white/60 leading-relaxed max-w-xs">
+          <p className="mt-4 text-sm text-white/70 leading-relaxed max-w-xs">
             Muebles a medida diseñados y fabricados para transformar tu hogar.
           </p>
         </div>
 
         <div>
-          <p className="text-sm font-semibold text-white mb-3">Horario</p>
-          <div className="flex gap-2 text-sm text-white/60 mt-3">
+          <p className="text-sm font-display font-semibold text-white mb-3">Horario</p>
+          <div className="flex gap-2 text-sm text-white/70 mt-3">
             <Clock size={16} className="shrink-0 mt-0.5" />
             <div>
               {contact.hours.map((line) => (
@@ -41,7 +43,7 @@ export default function Footer() {
         </div>
 
         <div>
-          <p className="text-sm font-semibold text-white mb-3">
+          <p className="text-sm font-display font-semibold text-white mb-3">
             Síguenos en redes sociales
           </p>
           <div className="flex gap-3">
@@ -77,7 +79,7 @@ export default function Footer() {
       </div>
 
 
-      <div className="max-w-7xl mx-auto px-6 mt-10 pt-6 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-white/40">
+      <div className="max-w-7xl mx-auto px-6 mt-10 pt-6 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-white/70">
         <p>
           © {new Date().getFullYear()} Carpimueble SV. Todos los derechos
           reservados.

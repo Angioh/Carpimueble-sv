@@ -14,14 +14,16 @@ export default function LandingPage() {
     <div className="min-h-screen bg-white">
       <SEO />
       <Navbar />
-      <Hero />
-      <TrustBadges />
-      <Categories />
-      <AboutUs />
-      <Process />
-      <CTASection />
-      <Footer />
+      <main>
+        <Hero />
+        <TrustBadges />
+        <Categories />
+        <AboutUs />
+        <Process />
+        <CTASection />
+      </main>
       <WhatsAppButton />
+      <Footer />
     </div>
   );
 }

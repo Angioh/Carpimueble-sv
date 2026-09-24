@@ -8,7 +8,7 @@ export default function CTASection() {
     <section className="bg-[#112A3A] py-14">
       <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
         <div>
-          <h2 className="text-xl md:text-2xl  text-white max-w-md">
+          <h2 className="text-xl md:text-2xl font-display font-bold text-white max-w-md">
             ¿Tienes un espacio que quieres aprovechar al máximo?
           </h2>
           <p className="mt-2 text-white/70 text-sm max-w-md">
@@ -21,7 +21,7 @@ export default function CTASection() {
           href={waHref}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-3 bg-forest-500 hover:bg-forest-600 text-white font-semibold px-6 py-4 rounded-md transition-colors shrink-0"
+          className="inline-flex items-center gap-3 bg-forest-500 hover:bg-forest-600 text-white font-display font-semibold px-6 py-4 rounded-md transition-colors shrink-0"
         >
           <FaWhatsapp size={25} />
           <span className="text-left leading-tight text-sm">

@@ -8,7 +8,7 @@ export default function Process() {
   return (
     <section id="proceso" className="py-20 bg-white">
       <div className="max-w-5xl mx-auto px-6">
-        <h2 className="text-2xl md:text-3xl font-semibold text-center text-[#2E3A46]">
+        <h2 className="text-2xl md:text-3xl font-display font-bold text-center text-[#2E3A46]">
           Así es nuestro proceso
         </h2>
 
@@ -33,7 +33,7 @@ export default function Process() {
                     {step.number}
                   </span>
                 </div>
-                <h3 className="mt-5 font-semibold text-[#2E3A46]">
+                <h3 className="mt-5 font-display font-semibold text-[#2E3A46]">
                   {step.title}
                 </h3>
                 <p className="mt-2 text-sm text-[#465769] max-w-[220px]">

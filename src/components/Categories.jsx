@@ -53,7 +53,7 @@ export default function Categories() {
     <>
       <section id="catalogo" className="py-20 bg-white scroll-mt-28">
         <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-2xl md:text-3xl font-semibold text-center text-black">
+          <h2 className="text-2xl md:text-3xl font-display font-bold text-center text-[#2E3A46]">
             Mira una parte de nuestro catálogo
           </h2>
           <p className="mt-4 text-[#465769] leading-relaxed text-center">
@@ -214,7 +214,7 @@ export default function Categories() {
             </button>
           </div>
         </div>
-      </section>
+      
 
       {/* Visor de imagen */}
       {selectedImage && (
@@ -300,6 +300,7 @@ export default function Categories() {
           </div>
         </div>
       )}
+      </section>
     </>
   );
 }

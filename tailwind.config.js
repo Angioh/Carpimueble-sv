@@ -4,8 +4,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        display: ['"Manrope"', 'sans-serif'],
-        sans: ['"Inter"', 'sans-serif'],
+        display: ['Manrope', 'sans-serif'],
+        sans: ['Inter', 'sans-serif'],
       },
       colors: {
         forest: {

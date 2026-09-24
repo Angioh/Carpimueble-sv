@@ -8,10 +8,10 @@ export default function AboutUs() {
     <section id="historia" className="py-20 bg-white scroll-mt-28">
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         <div>
-          <p className="text-xs font-semibold tracking-[0.15em] text-[#5b7896] uppercase">
+          <p className="text-md font-semibold tracking-[0.15em] text-[#5b7896] uppercase">
             Quienes somos
           </p>
-          <h2 className="mt-3 text-2xl md:text-3xl  text-[#2E3A46] leading-snug">
+          <h2 className="mt-3 text-2xl md:text-3xl font-display font-bold text-[#2E3A46] leading-snug">
             Transformamos espacios con diseño, calidad y atención al detalle.
           </h2>
           <p className="mt-4 text-[#465769] leading-relaxed">
@@ -44,11 +44,18 @@ export default function AboutUs() {
           </p>
         </div>
 
-        <div
-          className="h-96 rounded-xl bg-[#112A3A] bg-cover bg-center"
-          style={{ backgroundImage: "url('/images/ABOUT.webp')" }}
-        />
+        <div className="relative h-96 rounded-xl bg-[#112A3A] overflow-hidden">
+          <img
+            src="/images/ABOUT.webp"
+            alt="Taller de fabricación de muebles a medida en El Salvador - Carpimueble SV"
+            width="800"
+            height="600"
+            loading="lazy"
+            className="absolute inset-0 w-full h-full object-cover object-center pointer-events-none"
+          />
+        </div>
       </div>
     </section>
   );
 }
+

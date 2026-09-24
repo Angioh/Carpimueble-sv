@@ -22,20 +22,21 @@ export default function Navbar() {
   return (
     <header className="sticky top-0 z-50 bg-[#112A3A] backdrop-blur border-b border-white/10">
       <nav className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
-        {/* Logo que siempre redirige al inicio */}
         <Link to="/" className="flex items-center gap-3">
           <img
             src="/images/Logo.webp"
+            width={60}
+            height={40}
             alt="CARPIMUEBLE SV"
             className="size-16 rounded-sm object-contain"
           />
 
           <div className="leading-tight">
-            <p className="font-display font-semibold tracking-wide text-white text-sm">
+            <p className="font-display font-bold tracking-wide text-white text-sm">
               CARPIMUEBLE SV
             </p>
 
-            <p className="text-[10px] tracking-[0.2em] text-white/70">
+            <p className=" text-[10px] tracking-[0.2em] text-white/70">
               DISEÑO Y CALIDAD
             </p>
           </div>
@@ -60,7 +61,7 @@ export default function Navbar() {
             href={waHref}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 bg-forest-500 hover:bg-forest-600 text-white text-sm font-semibold px-5 py-2.5 rounded-md transition-colors"
+            className="inline-flex items-center gap-2 bg-forest-500 hover:bg-forest-600 text-white text-sm font-display font-semibold px-5 py-2.5 rounded-md transition-colors"
           >
             Contáctanos
             <FaWhatsapp size={20} />
@@ -95,7 +96,7 @@ export default function Navbar() {
             href={waHref}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex justify-center items-center gap-2 bg-forest-500 text-white text-sm font-semibold px-5 py-2.5 rounded-md mt-2"
+            className="inline-flex justify-center items-center gap-2 bg-forest-500 text-white text-sm font-display font-semibold px-5 py-2.5 rounded-md mt-2"
           >
             Contacta con nosotros
             <FaWhatsapp size={20} />
