@@ -1,14 +1,6 @@
 import { Helmet } from "react-helmet-async";
 
-export default function SEO({
-  title = "Carpimueble SV | Carpintería y Muebles a Medida en El Salvador",
-
-  description = "Diseño y fabricación de muebles modernos a medida en El Salvador. Especialistas en muebles de TV flotantes, closets, cocinas de melamina RH y escritorios personalizados.",
-
-  canonical = "https://www.carpimueble-sv.com",
-
-  ogImage = "https://www.carpimueble-sv.com/images/Grap_carpimueble.jpg",
-}) {
+export default function SEO() {
   const schemaData = {
     "@context": "https://schema.org",
     "@type": "FurnitureStore",
@@ -17,9 +9,10 @@ export default function SEO({
 
     url: "https://www.carpimueble-sv.com",
 
-    logo: ogImage,
+    logo: "https://www.carpimueble-sv.com/images/Logo.webp",
 
-    image: ogImage,
+    image:
+      "https://www.carpimueble-sv.com/images/Grap_carpimueble.jpg",
 
     telephone: "+50373933266",
 
@@ -64,61 +57,19 @@ export default function SEO({
 
   return (
     <Helmet>
-
-      <title>{title}</title>
-
-      <meta name="description" content={description} />
-
-      <link rel="canonical" href={canonical} />
-
-
-      <meta property="og:type" content="website" />
-
-      <meta property="og:title" content={title} />
+      <title>
+        Carpimueble SV | Carpintería y Muebles a Medida en El Salvador
+      </title>
 
       <meta
-        property="og:description"
-        content={description}
+        name="description"
+       content="Muebles a medida en El Salvador: cocinas, closets, muebles de TV y escritorios personalizados. Diseño, fabricación e instalación."
       />
 
-      <meta property="og:url" content={canonical} />
-
-      <meta property="og:image" content={ogImage} />
-
-      <meta
-        property="og:image:alt"
-        content="Carpimueble SV - Carpintería y muebles a medida"
+      <link
+        rel="canonical"
+        href="https://www.carpimueble-sv.com"
       />
-
-      <meta property="og:image:width" content="1200" />
-
-      <meta property="og:image:height" content="630" />
-
-      <meta property="og:image:type" content="image/jpeg" />
-
-      <meta property="og:site_name" content="Carpimueble SV" />
-
-      <meta property="og:locale" content="es_SV" />
-
-
-
-      <meta name="twitter:card" content="summary_large_image" />
-
-      <meta name="twitter:title" content={title} />
-
-      <meta
-        name="twitter:description"
-        content={description}
-      />
-
-      <meta name="twitter:image" content={ogImage} />
-
-      <meta
-        name="twitter:image:alt"
-        content="Carpimueble SV - Carpintería y muebles a medida"
-      />
-
-
 
       <script type="application/ld+json">
         {JSON.stringify(schemaData)}
