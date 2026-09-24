@@ -27,27 +27,32 @@ export const categories = [
   {
     title: 'Muebles de TV y Salas',
     subtitle: 'El espacio perfecto para tu televisión, consolas y accesorios',
-    image: '/images/proyectos/mueble_para_tv_full_wpc.webp',
+    image: '/public/images/proyectos/Mueble_para_tv_full_wpc.webp',
+    image: '/images/proyectos/Mueble_para_tv_full_wpc.webp',
   },
   {
     title: 'Closets personalizados a medida',
     subtitle: 'Organización inteligente y acabados a tu gusto',
-    image: '/images/proyectos/closets_personalizados_a_medida.webp',
+    image: '/public/images/proyectos/Closets_personalizados_a_medida.webp',
+    image: '/images/proyectos/Closets_personalizados_a_medida.webp',
   },
   {
     title: 'Escritorios estandar o personalizados',
     subtitle: 'Comodidad y organización para tu espacio de trabajo',
-    image: '/images/proyectos/escritorio_estandar_o_personalizado.webp',
+    image: '/public/images/proyectos/Escritorio_estandar_o_personalizado.webp',
+    image: '/images/proyectos/Escritorio_estandar_o_personalizado.webp',
   },
   {
     title: 'Muebles recibidores',
     subtitle: 'Estilo, elegancia y orden desde la puerta de tu hogar',
-    image: '/images/proyectos/muebles_recibidores.webp',
+    image: '/public/images/proyectos/Muebles_recibidores.webp',
+    image: '/images/proyectos/Muebles_recibidores.webp',
   },
   {
     title: 'Muebles para baño',
     subtitle: 'Diseños a medida para baños modernos y organizados ',
-    image: '/images/proyectos/muebles_para_bano_personalizados.webp',
+    image: '/public/images/proyectos/Muebles_para_baño_personalizados.webp',
+    image: '/images/proyectos/Muebles_para_baño_personalizados.webp',
   },
 ]
 

@@ -10,7 +10,6 @@ export default function Hero() {
         <img
           src="/images/hero carpi.webp"
           alt="Muebles a medida para el hogar en El Salvador - Carpimueble SV"
-          fetchpriority="high"
           loading="eager"
           width="1920"
           height="1080"
